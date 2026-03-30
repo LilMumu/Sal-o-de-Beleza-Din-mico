@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/Logo_Espaço_Elas.jpg">
+    <title>Cadastre-Se</title>
+</head>
+<body class="body-login_cadastro">
+    <main class="main-cadastro">
+        <div class="card-left-cadastro">
+            <section class="form-b-cadastro">
+                <form action="./php/conexao_front_cadastro.php" method="post">
+                <div class="label-nome-cadastro">
+                    <label>NOME</label>
+                    <input type="text" class="subtitulo" name="nome" placeholder="Digite seu Nome e Sobrenome" name="Nome" required>
+                </div>
+                <div class="label-email-cadastro">
+                    <label>EMAIL</label>
+                    <input type="email" class="subtitulo" name="email" placeholder="Digite seu Email" name="Email" required>
+                </div>
+                <div class="label-senha-cadastro">
+                    <div class="label-senha-cadastro input-senha">
+                        <label>SENHA</label>
+                        <input type="password" class="subtitulo" name="senha" placeholder="Digite sua Senha" name="Senha" required/>
+                    </div>
+                    <div class="label-senha-cadastro input-confirmar-senha">
+                        <label>CONFIRME A SENHA</label>
+                        <input type="password" class="subtitulo" name="senha_confirm" placeholder="Confirme sua Senha" name="Senha" required/>
+                    </div>
+                </div>
+            
+                <section class="form-b-cadastro btn">
+                    <button type="submit">CADASTRAR</button>
+                </section>
+                </form>
+            </section>
+        </div> <!-- card-left-cadastro -->
+
+        <div class="card-right-cadastro">  
+            <section class="form-a-cadastro title-cadastro">
+                <p>Já possui conta? Então</p>
+                <h2><a href="login.html">Faça Login</a></h2>
+            </section>
+        </div> <!-- card-right-cadastro -->
+
+        <!--  <div class="g-recaptcha" data-sitekey="6LeWgUYcAAAAAJStewFRLCd-KDLgyjPFA7XbzrA_"></div> reCAPTCHA --> 
+
+        <img class="img-setinha-cadastro" src="./assets/cadastro_e_login/setinha_esquerda.jpeg" alt="setinha_centro">
+
+        <script src='https://www.google.com/recaptcha/api.js?hl=pt'></script> <!-- script do reCAPTCHA -->
+    </main> <!-- main-cadastro -->
+</body>
+</html>

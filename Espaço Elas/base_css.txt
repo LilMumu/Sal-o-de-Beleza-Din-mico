@@ -1,0 +1,2014 @@
+DATA DE MODIFICAÇÃO: 27/09/2021.
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../font/roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('../font/times_new_roman/times-new-roman-14.ttf');
+}
+
+@font-face {
+    font-family: 'MV Boli';
+    src: url('../font/mv_boli/mv-boli.ttf');
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.1s;
+ }
+
+ /* link que foi visitado */
+ a:visited {
+    color: none;
+     
+ }
+ /* quando o ponteiro do mouse passa no link */
+ a:hover {
+    color: #282885bf;
+ }
+ /* quando o link for selecionado */
+ a:active {
+    color: #282885bf;
+}
+
+body {
+    max-width: 3840px;
+    max-height: 2160px;
+    min-height: 100vh;
+}
+
+/* INICIO DROPDOWN MENU */
+/* estilização do botão: cor, espaçamento interno, tamanho */
+.dropdown-button {
+    background-color: transparent;
+    /* color: white; */
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* posiciona o container do dropdown */
+.dropdown {
+    margin: 0 0px;
+    width: 89px;
+    height: 75px;
+    position: relative;
+    display: inline-block;
+    left: 20px;
+}
+
+/* posiciona e estiliza o conteudo do dropdown(listas) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(201, 201, 201, 0.438);
+    min-width: 220px;
+    height: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 30px;
+}
+
+/* retira a estilização padrão das listas e define os espaçamentos*/
+.dropdown-content li {
+    list-style: none;
+    background-color: white;
+    /* top: 10px; */
+    height: auto;
+    padding: 10px 10px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.dropdown-content li:first-child {
+    margin-top: 0;
+}
+
+/* estiliza os links do dropdown */
+.dropdown-content li a {
+    color: black;
+    padding: 14px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-family: 'Gluten', cursive;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font-size: 24px;
+}
+
+.dropdown-content li a.red:hover {
+    border: 1px solid #D4003D;
+    color: #D4003D;
+}
+
+.dropdown-content li a.blue:hover {
+    border: 1px solid #AACCFF;
+    color: #AACCFF;
+}
+
+.dropdown-content li a.blue2:hover {
+    border: 1px solid #838DD9;
+    color: #838DD9;
+}
+
+.dropdown-content li a.purple:hover {
+    border: 1px solid #8600E9;
+    color: #8600E9;
+}
+
+.dropdown-content li a.ciano:hover {
+    border: 1px solid #1ED5E6;
+    color: #1ED5E6;
+}
+
+/* transforma o display do dropdown em bloco
+fazendo com que ele quebre e não os limites do seu container */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content #menu-home {
+    background-color: #D4003D;
+    color: #FFF;
+    cursor: default;
+}
+
+.dropdown-content #menu-agenda {
+    background-color: #AACCFF;
+    color: #FFF;
+    cursor: default;
+}
+
+.dropdown-content #menu-perfil {
+    background-color: #1ED5E6;
+    color: #FFF;
+    cursor: default;
+}
+
+.dropdown-content #menu-servicos {
+    background-color: #838DD9;
+    color: #FFF;
+    cursor: default;
+}
+
+.dropdown-content #menu-sobre {
+    background-color: #8600E9;
+    color: #FFF;
+    cursor: default;
+}
+
+/* click do menu */
+.dropbtn {
+    background-color: #ffffff;
+    /* color: white; */
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.show {
+    display: block;
+}
+/* FIM DROPDOWN MENU */
+
+/* CSS LOGIN */
+.body-login {
+    overflow: hidden;
+    margin-top: 45px;
+}
+
+
+.main-login {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    width: 950px;
+    justify-content: center;
+}
+
+.card-left {
+    background-image: linear-gradient(180deg, rgba(30, 213, 230, 0.45) 0%, rgba(30, 213, 230, 0.3) 100%), linear-gradient(249.74deg, rgba(134, 0, 233, 0.75) 0%, rgba(252, 104, 226, 0.75) 75%, rgba(244, 45, 203, 0.75) 100%);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    width: 700px;
+    height: 450px;
+    padding: 50px;
+    margin: 15px 0 50px ;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    margin-top: 15px;
+} /* Card da Esquerda*/
+
+.title {
+    font-family: 'Roboto', sans-serif;
+    color: white; 
+    text-align: left;
+    padding-top: 130px;
+}
+
+.title > h1 {
+    padding-top: 0 5px;
+    font-size: 43px;
+    font-family: 'Roboto';
+}
+
+.title > p {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-right{
+    background-color: #ebebeb;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    
+    text-align: left;
+    justify-content: center;
+    padding: 50px;
+    margin: auto;
+    width: 100%;
+    height: 450px;
+    padding-left: 50px;
+
+    margin-bottom: 50px;
+    margin-top: 15px;
+} /* Card da Direita*/
+
+.form-a {
+    padding-right: 10px;
+    padding-left: 8px;
+}
+
+.form-b {
+    padding-right: 14px;
+    padding-left: 0px;
+    padding: 10px;
+    margin: auto;
+
+    align-items: center;
+}
+
+.form-b > .label-email , .label-senha , .label-nome {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color: rgb(34, 33, 33);
+    display: block;
+
+    text-align: left;
+    margin-top: 12px;
+    padding-bottom: 4px;
+    padding: 5px;
+    width: 100%;
+    height: 90px;
+}
+
+.form-b > .label-email > input , .label-senha > input , .label-nome > input {
+    display: block; 
+    width: 400px;
+    height: 50px;
+    outline: 0;
+    background-color: #ebebeb;
+
+    padding-top: 12px;
+    padding-left: 5px;
+    padding-bottom: 4px;
+    
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+.form-b > button {
+    width: 150px;
+    height: 45px;
+    border-radius: 35px;
+    padding: 10px;
+    background-image: linear-gradient(180deg, rgba(131, 141, 217, 0.75) 0%, rgba(134, 0, 233, 0.375) 100%), linear-gradient(159.74deg, rgba(30, 213, 230, 0.75) 0%, rgba(30, 213, 230, 0.375) 100.24%);
+    color: white;
+    border: 0px;
+    outline: 0;
+    font-family: 'Roboto';
+    font-size: 20px;
+    text-align: center;
+    margin-right: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-image: linear-gradient(to right, #616cc2bf, #8211d360);
+    transition: 0.2s;
+}
+
+.subtitulo {
+    font-size: 15px;
+    font-family: 'Times New Roman', sans-serif;
+    padding: 10px;
+}
+
+#forgot-password {
+    font-size: 17px;
+    font-family: 'Times New Roman', sans-serif;
+    color: #0e0d0dd5;
+    display: flex;
+    padding: 0 5px;
+    padding-top: 12px;
+}
+
+#forgot-password > a {
+    color: #0e0d0dd5;
+    text-decoration: none;
+}
+
+#forgot-password > a:hover {
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+.label-email {
+    padding-bottom: 10px;
+}
+
+.img-google {
+    border-radius: 50px;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    left: -10px;
+    top: 14px;
+}
+
+.img-setinha {
+    border-radius: 50px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: -555px;
+    top: 220px;
+}
+/* FIM CSS LOGIN */
+
+
+
+
+
+/* INICIO CADASTRO */
+.body-cadastro {
+    overflow: hidden;
+}
+
+.main-cadastro {
+    margin: 30px  auto;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    width: 950px;
+    justify-content: center;
+}
+
+.card-left-cadastro {
+    background-color: #ebebeb;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    position: relative;
+    
+    text-align: left;
+    justify-content: center;
+    padding: 20px;
+    margin: auto;
+    width: 100%;
+    height: 450px;
+    padding-left: 50px;
+
+    margin-left: 20px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.title-cadastro {
+    font-family: 'Roboto', sans-serif;
+    color: white; 
+    text-align: right;
+    padding-top: 165px;
+    padding-right: 50px;
+}
+
+.title-cadastro > h2 {
+    padding-top: 0 10px;
+    font-size: 43px;
+    font-family: 'Roboto';
+}
+
+.title-cadastro > p {
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-right-cadastro {
+    background: linear-gradient(180deg, rgba(30, 213, 230, 0.45) 0%, rgba(30, 213, 230, 0.3) 100%), linear-gradient(249.74deg, rgba(134, 0, 233, 0.75) 0%, rgba(252, 104, 226, 0.75) 75%, rgba(244, 45, 203, 0.75) 100%);
+
+    position: relative;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    width: 700px;
+    height: 450px;
+    padding: 20px;
+
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.form-b-cadastro {
+    padding-right: 14px;
+    padding-left: 5px;
+    padding-top: 0px;
+
+    align-items: center;
+}
+
+.form-b-cadastro > .label-email-cadastro , .label-senha-cadastro , .label-nome-cadastro , .label-nome-cadastro {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 19px;
+    color: rgb(34, 33, 33);
+    display: block;
+
+    text-align: left;
+    padding-bottom: 10px;
+    padding-top: 2px;
+    width: 100%;
+    height: 100%;
+}
+
+.form-b-cadastro > .label-email-cadastro > input , .label-senha-cadastro > input , .label-nome-cadastro > input {
+    display: block; 
+    width: 400px;
+    height: 35px;
+    outline: 0;
+    background-color: #ebebeb;
+
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+}
+
+.form-b-cadastro > button {
+    width: 150px;
+    height: 45px;
+    border-radius: 35px;
+    padding: 0 10px;
+    background-image: linear-gradient(180deg, rgba(131, 141, 217, 0.75) 0%, rgba(134, 0, 233, 0.375) 100%), linear-gradient(159.74deg, rgba(30, 213, 230, 0.75) 0%, rgba(30, 213, 230, 0.375) 100.24%);
+    color: white;
+    border: 0px;
+    outline: 0;
+    font-family: 'Roboto';
+    font-size: 20px;
+    text-align: center;
+    margin-right: 40px;
+    margin-top: 20px;
+    cursor: pointer;
+
+    position: relative;
+    left: 260px;
+    bottom: 17px;
+}
+
+.btn button:hover {
+    background-image: linear-gradient(to right, #616cc2bf, #8211d360);
+    color: #282885bf;
+    transition: 0.2s;
+}
+
+.subtitulo {
+    font-size: 15px;
+    font-family: 'Times New Roman', sans-serif;
+    padding: 10px;
+}
+
+.label-nome-cadastro {
+    padding-top: 35px;
+    padding-bottom: 20px;
+}
+
+.label-email-cadastro {
+    padding-top: 20px;
+}
+
+.label-senha-cadastro {
+    padding-top: 10px;
+}
+
+.img-setinha-cadastro {
+    border-radius: 50px;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    left: -396px;
+    top: 233px;
+}
+/* FIM CADASTRO */
+
+
+
+
+/* INICIO PAGINA PERFIL*/
+/* INÍCIO PERFIL PRINCIPAL */
+.main-perfil {
+    margin: 0px auto;
+    width: 1100px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#main-perfil {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+.card-perfil {
+    width: 1100px;
+    height: 220px;
+    background: linear-gradient(0deg, rgba(245, 245, 245, 0.747), rgba(245, 245, 245, 0.753)), rgba(170, 204, 255, 0.5);
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 200px 700px 300px;
+    padding: 22px;
+}
+
+.img-perfil > img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    margin: -9px auto;
+    margin-left: 12px;
+}
+
+.btn-edition-perfil  button {
+    background: linear-gradient(0deg, rgba(131, 141, 217, 0.3), rgba(131, 141, 217, 0.3)), #1ED5E6;
+    width: 160px;
+    height: 40px;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+.btn-edition-perfil  button:hover {
+    text-decoration: underline;
+    color: #282885bf;
+}
+
+.btn-notificacao  button {
+    background: linear-gradient(0deg, rgba(131, 141, 217, 0.3), rgba(131, 141, 217, 0.3)), #1ED5E6;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    margin-left: 15px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+.btn-notificacao  button:hover {
+    color: #282885bf;
+}
+
+.nome p {
+    width: 800px;
+    height: 70px;
+    color: black;
+    font-family: 'MV Boli', sans-serif;
+    font-size: 50px;
+    margin: 0 80px;
+}
+
+.ativo-desativado li {
+    width: 100px;
+    height: 100px;
+    color: #838DD9;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-decoration: underline;
+    margin-left: 100px;
+}
+
+.nome-ativo {
+    grid-column: 2 / 3;
+}
+
+.botoes {
+    grid-column: 2 / 4;
+    margin: -35px 620px;
+    display: flex;
+}
+
+.img-perfil {
+    grid-column: 1 / 2;
+}
+/* FIM PERFIL PRINCIPAL*/
+
+
+
+/* INÍCIO FUNCOES PERFIL */
+.card-funcoes {
+    width: 400px;
+    height: 85px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    margin: 50px auto;
+}
+
+.agenda, .galeria, .desconto, .proced, .config {
+    width: 65px;
+    height: 65px;
+    background: linear-gradient(0deg, rgba(245, 245, 245, 0.747), rgba(245, 245, 245, 0.753)), rgba(170, 204, 255, 0.5);
+    border-radius: 10px;
+    margin-top: 15px;
+    display: grid;
+}
+
+.agenda button, .galeria button, .desconto button, .proced button, .config button {
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.agenda button:hover, .galeria button:hover, .desconto button:hover, .proced button:hover, .config button:hover {
+    background-color: lightgray;
+}
+
+.card-funcoes img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.card-funcao img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.img-agenda, .img-desconto, .img-galeria, .img-config {
+    width: 65px;
+    height: 65px;
+}
+
+
+/* FUNÇÕES PERFIL EMPREGADO */
+.card-funcao {
+    width: 100px;
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 30px auto;
+}
+/* FIM FUNÇÕES PERFIL*/
+
+
+/* PROCEDIMENTOS PERFIL */
+.procedimentos {
+    display: none;
+    justify-content: center;
+    max-width: 800px;
+    height: 200px;
+    margin: 30px auto;
+}
+
+.emp-proced {
+    height: 10px;
+}
+
+.funcao-emp {
+    margin: 40px 580px;
+}
+
+.card-procedimentos div {
+    margin-bottom: 20px;
+}
+
+.procedimento-1 {
+    background: linear-gradient(0deg, rgba(245, 245, 245, 0.747), rgba(245, 245, 245, 0.753)), rgba(170, 204, 255, 0.5);;
+    border-radius: 10px;
+    width: 1100px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 105px 1fr;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.procedimento-2 {
+    background: linear-gradient(0deg, rgba(245, 245, 245, 0.747), rgba(245, 245, 245, 0.753)), rgba(170, 204, 255, 0.5);;
+    border-radius: 10px;
+    width: 1100px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 105px 1fr;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.procedimento-3 {
+    background: linear-gradient(0deg, rgba(245, 245, 245, 0.747), rgba(245, 245, 245, 0.753)), rgba(170, 204, 255, 0.5);;
+    border-radius: 10px;
+    width: 1100px;
+    height: 100px;
+    display: grid;
+    grid-template-columns: 105px 1fr;
+    flex-wrap: wrap;
+    justify-content: left;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+ 
+.card-procedimentos h2 {
+    color: #000000bd;
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-procedimentos p {
+    color: #838DD9;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 4px;
+}
+
+.img-proced img {
+    width: 60px;
+    height: 60px;
+}
+
+/* PROCEDIMENTOS EMPREGADO */
+.card-procedimento_emp h2 {
+    color: #000000bd;
+    font-size: 23px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card-procedimento_emp p {
+    color: #838DD9;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 4px;
+}
+/* FIM PROCEDIMENTOS */
+
+
+/* INICIO PERFIL GALERIA*/
+.perfil-galeria {
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: none;
+    grid-template-columns: 220px 220px 220px;
+    grid-gap: 50px;
+    row-gap: 20px;
+}
+
+.perfil-galeria img {
+    width: 240px;
+    height: 240px;
+    box-shadow: 4px 4px 0.6em rgba(0, 0, 0, 0.493);
+    border-radius: 10px;
+}
+/* FIM PERFIL GALERIA*/
+
+
+/* INICIO PERFIL DESCONTOS*/
+.perfil-combo {
+    width: 800px;
+    height: 310px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: none;
+    grid-template-columns: 390px 390px;
+    grid-gap: 40px;
+    row-gap: 20px;
+}
+
+.perfil-combo img {
+    width: 400px;
+    height: 200px;
+    box-shadow: 4px 4px 0.6em rgba(0, 0, 0, 0.493);
+    border-radius: 10px;
+}
+/* FIM PERFIL DESCONTOS*/
+
+
+/* INICIO PERFIL AGENDA*/
+.perfil-agenda {
+    width: 890px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: none;
+    grid-template-columns: 600px;
+    background: linear-gradient(0deg, rgba(245, 245, 245, 0.747), rgba(245, 245, 245, 0.753)), rgba(170, 204, 255, 0.5);
+    border-radius: 20px 20px 0 0;
+    padding: 35px 13px;
+}
+
+.card-agenda-semana {
+    width: 100%;
+    height: 70px;
+    margin: 0 10px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    text-align: center; 
+    color: #FFF;
+}
+
+.card-agenda-dias  {
+    width: 100%;
+    height: 280px;
+    margin: 0 10px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-gap: 10px 0;
+}
+
+.card-mes {
+    width: 800px;
+    height: 80px;
+    margin: 0 40px;
+}
+
+.mes {
+    margin: 0 auto;
+    display: flex;
+}
+
+.fas {
+    font-size: 55px;
+    color: #000000ce;
+}
+
+#seta-left {
+    width: 60px;
+    height: 60px;
+    margin: -4px 0 0 325px;
+}
+
+#seta-right{
+    width: 60px;
+    height: 60px;
+    margin: -4px 0 0 40px;
+}
+
+.card-mes p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color: #000000ce;
+}
+
+.card-agenda-semana div {
+    width: 100px;
+    height: 40px;
+    background: linear-gradient(0deg, rgba(131, 141, 217, 0.75), rgba(131, 141, 217, 0.75)), rgba(0, 0, 0, 0.75);
+    margin: 0 10px;
+}
+
+.card-agenda-dias div {
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    margin: 0 10px;
+    background-color: #FFF;
+}
+
+.card-agenda-semana p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    padding-top: 4px;
+}
+
+.card-agenda-dias p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    padding-top: 4px;
+}
+
+.card-agenda-dias #dia-26-ant, #dia-2, #dia-9, #dia-16, #dia-23, #dia-30, #dia-3, #dia-10, #dia-17, #dia-24, #dia-31, #dia-6-post {
+    color: #346396;
+    background-color: #9CB7D3;
+}
+
+.card-agenda-dias #dia-27-ant, #dia-28-ant, #dia-29-ant, #dia-30-ant, #dia-1-post, #dia-2-post, #dia-3-post, #dia-4-post, #dia-5-post {
+    color: #9CB7D3;
+}
+
+.card-agenda-semana #domingo {
+    border-radius: 10px 0 0 0 ;
+}
+
+.card-agenda-semana #sabado {
+    border-radius: 0 10px 0 0;
+}
+
+.card-agenda-dias #dia-31 {
+    border-radius: 0 0 0 10px;
+}
+
+.card-agenda-dias #dia-6-post {
+    border-radius: 0 0 10px 0;
+}
+
+.card-legenda {
+    width: 890px;
+    height: 70px;
+    margin: 70px auto;
+    margin-left: -12px;
+
+    display: flex;
+    justify-content: center;
+    border-radius: 0 0 20px 20px;
+    background: linear-gradient(0deg, rgba(245, 245, 245, 0.747), rgba(245, 245, 245, 0.753)), rgba(170, 204, 255, 0.5);;
+}
+
+.card-legenda p {
+    margin: 24px 35px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+#btn-disp {
+    width: 20px;
+    height: 20px;
+    background-color: #FFF;
+    margin: 27px 0;
+    border-radius: 1px;
+}
+
+#btn-serv {
+    width: 20px;
+    height: 20px;
+    background-color: #AACCFF;
+    margin: 27px 0;
+    border-radius: 1px;
+}
+
+#btn-indisp {
+    width: 20px;
+    height: 20px;
+    background-color: #9CB7D3;
+    margin: 27px 0;
+    border-radius: 1px;
+}
+
+#disponivel {
+    margin: 24px 60px 0px 10px;
+}
+
+#servicos {
+    margin: 24px 60px 0px 10px;
+}
+
+#indisponivel {
+    margin: 24px 60px 0px 10px;
+}
+/* FIM PERFIL AGENDA*/
+/* FIM PAGINA PERFIL*/
+
+
+
+
+
+/* COMEÇO CSS PERFIL ADM*/
+/* COMEÇO CSS ADM-GERENCIAMENTO */
+.sessao-gerenciar {
+    width: 900px;
+    height: 500px;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #F5F5F5;
+    margin: 0 auto;
+    margin-bottom: -100px;
+    display: none;
+    grid-template-columns: 220px 220px 220px;
+    justify-content: center;
+    align-items: center;
+}
+
+.sessao-gerenciar div {
+    height: 160px;
+    margin-left: 22%;
+}
+
+.sessao-gerenciar img {
+    width: 100px;
+    height: 100px;
+    box-shadow: 4px 4px 0.6em rgba(0, 0, 0, 0.493);
+    border-radius: 10px;
+}
+.sessao-gerenciar p{
+    width: 100px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+    text-align: center;
+}
+/* FIM CSS ADM-GERENCIAMENTO */
+/* FIM CSS PERFIL ADM*/
+
+
+
+/* INICIO MANUAL DO USUARIO*/
+.body-manual-usuario {
+    overflow-x: hidden;
+}
+
+.manual {
+    width: 1366px;
+    height: 800px;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Mv Boli', sans-serif;
+    font-size: 25px;
+    color: #21003A;
+}
+
+.manual div {
+    margin-bottom: 15px;
+}
+
+.manual div#manual-usuario  {
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.manual p {
+    padding-left: 150px;
+}
+
+#manual-usuario {
+    width: 600px;
+    height: 60px;
+    padding-top: 11px;
+    background: linear-gradient(180deg, rgba(30, 213, 230, 0.45) 0%, rgba(30, 213, 230, 0.3) 100%), linear-gradient(249.74deg, rgba(134, 0, 233, 0.75) 0%, rgba(244, 45, 203, 0.75) 100%);
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+#manual-cadastro {
+    width: 350px;
+    height: 50px;
+    padding-top: 6px;
+    background: linear-gradient(292.32deg, rgba(30, 213, 230, 0.2) 29.04%, rgba(30, 213, 230, 0.15) 70.89%), rgba(231, 204, 251, 0.9);
+}
+
+#manual-login {
+    width: 350px;
+    height: 50px;
+    padding-top: 6px;
+    background: linear-gradient(292.32deg, rgba(30, 213, 230, 0.2) 29.04%, rgba(30, 213, 230, 0.15) 70.89%), rgba(231, 204, 251, 0.9);
+}
+
+#manual-perfil {
+    width: 350px;
+    height: 50px;
+    background: linear-gradient(292.32deg, rgba(30, 213, 230, 0.2) 29.04%, rgba(30, 213, 230, 0.15) 70.89%), rgba(231, 204, 251, 0.9);
+    padding-top: 6px;
+}
+
+#manual-agenda {
+    width: 350px;
+    height: 50px;
+    background: linear-gradient(292.32deg, rgba(30, 213, 230, 0.2) 29.04%, rgba(30, 213, 230, 0.15) 70.89%), rgba(231, 204, 251, 0.9);
+    padding-top: 6px;
+}
+
+#manual-servicos {
+    width: 350px;
+    height: 50px;
+    background: linear-gradient(292.32deg, rgba(30, 213, 230, 0.2) 29.04%, rgba(30, 213, 230, 0.15) 70.89%), rgba(231, 204, 251, 0.9);
+    padding-top: 6px;
+}
+
+#img-tesoura-pente {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    bottom: 100px;
+    right: 100px;
+}
+
+.sobre-nos {
+    width: 800px;
+    height: 300px;
+}
+
+#titulo-sobre {
+    width: 600px;
+    height: 60px;
+    margin-top: 40px;
+    padding-top: 11px;
+    background: linear-gradient(180deg, rgba(30, 213, 230, 0.45) 0%, rgba(30, 213, 230, 0.3) 100%), linear-gradient(249.74deg, rgba(134, 0, 233, 0.75) 0%, rgba(244, 45, 203, 0.75) 100%);
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+
+#title-espaco-elas {
+    color: #21003A;
+    font-family: 'MV Boli', sans-serif;
+    letter-spacing: 5px;
+    text-align: left;
+    margin: 30px 120px;
+    font-size: 35px;
+}
+
+#p-espaco-elas {
+    width: 1200px;
+    text-align: left;
+    color: black;
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 22px;
+}
+
+#subtitle {
+    text-align: left;
+    color: #000000BF;
+    font-family: 'Times New Roman', sans-serif;
+    margin: 30px 150px;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+#p-subtitle {
+    width: 1200px;
+    text-align: left;
+    color: black;
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 22px;
+}
+
+.sobre-viper {
+    width: 800px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+#title-viper {
+    color: #21003A;
+    font-family: 'MV Boli', sans-serif;
+    letter-spacing: 5px;
+    text-align: left;
+    margin: 30px 120px;
+    font-size: 35px;
+}
+
+.p-espaco-elas {
+    font-size: 22px;
+}
+
+.integrantes {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+#title-integrantes {
+    color: #21003A;
+    font-family: 'MV Boli', sans-serif;
+    letter-spacing: 5px;
+    text-align: left;
+    margin: 30px 120px;
+    font-size: 35px;
+}
+
+.integrantes {
+    width: 1349px;
+    height: 900px;
+}
+
+.card-integrantes {
+    font-size: 28px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#sub {
+    font-size: 18px;
+}
+
+#integrante_1 {
+    background: linear-gradient(180deg, rgba(30, 213, 230, 0.45) 0%, rgba(30, 213, 230, 0.3) 100%), linear-gradient(249.74deg, rgba(134, 0, 233, 0.75) 0%, rgba(244, 45, 203, 0.75) 100%);
+    border-radius: 15px 15px 0 0;
+    width: 850px;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 0 400px;
+    align-items: center;
+    text-align: left;
+    color: #FFF;
+    margin: 0 auto;
+}
+
+#integrante_1 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px 10px;
+}
+
+#integrante_2 {
+    background: linear-gradient(292.32deg, rgba(30, 213, 230, 0.2) 29.04%, rgba(30, 213, 230, 0.15) 70.89%), rgba(231, 204, 251, 0.9);
+    width: 850px;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 500px 150px;
+    text-align: right;
+    justify-content: right;
+    align-items: center;
+    color: black;
+    margin: 0 auto;
+}
+
+#integrante_2 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#integrante_3 {
+    background: linear-gradient(180deg, rgba(30, 213, 230, 0.45) 0%, rgba(30, 213, 230, 0.3) 100%), linear-gradient(249.74deg, rgba(134, 0, 233, 0.75) 0%, rgba(244, 45, 203, 0.75) 100%);
+    width: 850px;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 0 550px;
+    align-items: center;
+    text-align: left;
+    color: #FFF;
+    margin: 0 auto;
+}
+
+#integrante_3 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px 10px;
+}
+
+#integrante_4 {
+    background: linear-gradient(292.32deg, rgba(30, 213, 230, 0.2) 29.04%, rgba(30, 213, 230, 0.15) 70.89%), rgba(231, 204, 251, 0.9);
+    width: 850px;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 570px 150px;
+    text-align: right;
+    justify-content: right;
+    align-items: center;
+    color: black;
+    margin: 0 auto;
+}
+
+#integrante_4 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#integrante_5 {
+    background: linear-gradient(180deg, rgba(30, 213, 230, 0.45) 0%, rgba(30, 213, 230, 0.3) 100%), linear-gradient(249.74deg, rgba(134, 0, 233, 0.75) 0%, rgba(244, 45, 203, 0.75) 100%);
+    width: 850px;
+    height: 120px;
+    display: grid;
+    grid-template-columns: 0 550px;
+    align-items: center;
+    text-align: left;
+    color: #FFF;
+    margin: 0 auto;
+}
+
+#integrante_5 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px 10px;
+}
+
+#integrante_6 {
+    background: linear-gradient(292.32deg, rgba(30, 213, 230, 0.2) 29.04%, rgba(30, 213, 230, 0.15) 70.89%), rgba(231, 204, 251, 0.9);
+    width: 850px;
+    height: 120px;
+    border-radius: 0 0 15px 15px;
+    display: grid;
+    grid-template-columns: 570px 148px;
+    text-align: right;
+    justify-content: right;
+    align-items: center;
+    color: black;
+    margin: 0 auto;
+}
+
+#integrante_6 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px;
+}
+/* FIM SOBRE NOS*/
+
+
+
+
+/* INICIO INDEX */
+/* Header */
+#cabeçalho{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.cabecalho img{
+   background-position: cover;
+   width: 100%;
+   height: auto;
+}
+
+/* Banner */
+.titulo{
+    width: 600px;
+    height: 300px;
+    flex-direction: column;
+    position: relative;
+    bottom: 520px;
+    left: 60px;
+    text-align: center;
+}
+
+.conteudo{
+    height: 0px;
+    margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
+}
+
+.titulo h1{
+    font-family: 'Brush Script MT',sans-serif;
+    font-size: 100px;
+    color: rgba(212, 0, 61, 1);
+    letter-spacing: 5px;
+}
+
+.titulo h3 {
+    font-family: 'MV Boli',sans-serif;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 1);
+    letter-spacing: 3px;
+}
+
+.img-logo {
+    width: 230px;
+    height: 300px;
+
+    position: relative;
+    bottom: 850px;
+    left: 950px;
+}
+
+/* Destaque do Mês */
+.destaque-mes {
+    background: linear-gradient(180deg, #000000 28.13%, #FFFFFF 81.77%);
+    width: 1349px;
+    height: 600px;
+    margin: -4px 0 0 0;
+}
+
+#title-mes {
+    height: 70px;
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 4px;
+    padding-top: 30px;
+}
+/* CSS CAROUSEL (SLIDE) */
+.col-100{
+    width: 100%;
+    float: left;
+    position: relative;
+    margin-top: 2em;
+}
+.slider-principal{
+    width: 100%;
+}
+.slider-principal img{
+    height: 34em;
+}
+button.slick-prev {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url("../assets/anterior.png");
+    top: 30%;
+    left: 14%;
+    margin-top: 60px;
+    cursor: pointer;
+}
+button.slick-next {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 51px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url("../assets/posterior.png");
+    top: 30%;
+    right: 14%;
+    margin-top: 60px;
+    cursor: pointer;
+}
+.slick-list {
+    width: 100% !important;
+}
+.slick-initialized {
+    overflow: hidden;
+}
+.slick-dots li button {
+    font-size: 0px;
+    border: 3px solid #ffffff;
+    width: 15px;
+    height: 18px;
+    background: transparent;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slick-dots {
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    left: 46%;
+    top: 94%;
+}
+li.slick-active button {
+    background: hsla(295, 72%, 45%, 0.774);
+}
+.slick-dots li {
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.slider-principal img {
+    width: 100%;
+    height: 420px;
+}
+/* Combos e Promocoes */
+.promocoes {
+    height: 600px;
+}
+
+#title-promocoes {
+    height: 70px;
+    color: rgba(0, 0, 0, 0.911);
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 4px;
+    padding-top: 30px;
+}
+
+#title-promocoes a{
+    color: rgba(0, 0, 0, 0.911);
+}
+
+#title-promocoes a:hover {
+    color: #8600E9;
+    transition: 0.2s;
+}
+
+.card-promocoes {
+    margin: 40px auto;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+.card-promocoes img {
+    width: 400px;
+    height: 200px;
+    box-shadow: 4px 4px 0.6em rgba(0, 0, 0, 0.493);
+    border-radius: 10px;
+}
+
+/* Sobre Nós */
+.sobre_nos-index {
+    height: 530px;
+    margin: 0 auto;
+}
+
+#title-sobre-index {
+    height: 70px;
+    color: rgba(0, 0, 0, 0.911);
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 4px;
+    padding-top: 30px;
+}
+
+#title-sobre-index a{
+    color: rgba(0, 0, 0, 0.911);
+}
+
+#title-sobre-index a:hover {
+    color: #8600E9;
+    transition: 0.1s;
+    text-decoration: underline;
+}
+
+.cards-index-sobre {
+    margin: 50px auto;   
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-gap: 100px;
+    justify-content: center;
+    color: #FFF;
+}
+
+.card-intuito_site {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(180deg, rgba(30, 213, 230, 0.45) 0%, rgba(30, 213, 230, 0.3) 100%), linear-gradient(249.74deg, rgba(134, 0, 233, 0.75) 0%, rgba(244, 45, 203, 0.75) 100%);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.card-intuito_site h2 {
+    font-family: 'MV Boli', sans-serif;
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-left: 12px;
+}
+
+.card-intuito_site p {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.card-sobre_salao {
+    width: 350px;
+    height: 350px;
+    background: linear-gradient(180deg, rgba(30, 213, 230, 0.45) 0%, rgba(30, 213, 230, 0.3) 100%), linear-gradient(249.74deg, rgba(134, 0, 233, 0.75) 0%, rgba(244, 45, 203, 0.75) 100%);
+    border-radius: 30px;
+    padding: 20px;
+}
+
+.card-sobre_salao h2 {
+    font-family: 'MV Boli', sans-serif;
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-left: 12px;
+}
+
+.card-sobre_salao p {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+/* Cadastro e Login Index */
+.cadastro-login-index {
+    width: 1349px;
+    height: 250px;
+    background-color: #ebebeb;
+    color: rgba(0, 0, 0, 0.911);
+}
+
+#title-cadastro-login-index {
+    height: 70px;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 3px;
+    padding-top: 30px;
+}
+
+#p-cadastro-login-index {
+    font-family: 'Times New Roman', sans-serif;
+    font-size: 28px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#p-cadastro-login-index a  {
+    text-decoration: underline; 
+    color: rgba(212, 0, 61, 1);
+    transition: 0.1s;
+}
+
+#p-cadastro-login-index a:hover {
+    color: #8600E9;
+}
+
+#p-cadastro-login-index a:active {
+    color: rgba(212, 0, 61, 1);
+}
+/* FIM INDEX */
+
+
+/* INICIO SERVIÇOS */
+/*menu do card principal*/
+.servico, .capilar {
+    width: 1000px;
+    height: 650px;
+    background: linear-gradient(0deg, rgba(245, 245, 245, 0.6), rgba(245, 245, 245, 0.6)), rgba(170, 204, 255, 0.5);
+    border-radius: 0 0 20px 20px;
+    margin: 0 auto;
+    margin-bottom: -110px;
+}
+
+.capilar {
+    display: inherit;
+}
+
+.design_sobrancelha {
+    display: none;
+}
+
+.manicure_pedicure {
+    display: none;
+}
+
+.promocoes_servicos {
+    display: none;
+}
+
+.menu-servico {
+    width: 1000px;
+    height: 120px;
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgba(131, 141, 217, 0.75) 0%, rgba(134, 0, 233, 0.375) 100%), linear-gradient(159.74deg, rgba(30, 213, 230, 0.75) 0%, rgba(30, 213, 230, 0.375) 100.24%);
+    border-radius: 20px 20px 0 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-servico button {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    background-color: #FFF;
+    color: #000000;
+    border: 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.menu-servico button:hover {
+    color: #9CB7D3;
+    transition: 0.2s;
+}
+
+#cabelo {
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+#manicure_pedicure {
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+#sobrancelha {
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+#promocoes-servicos {
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+/* card-servico */
+.card-servico {
+    display: grid;
+    grid-template-columns: 234px 234px 234px 234px;
+    grid-gap: 20px;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.card-servico div {
+    width: 180px;
+    height: 180px;
+    margin: 0 auto;
+    color: #FFF;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), #9CB7D3;
+    border-radius: 10px;
+}
+/* FIM SERVIÇOS */
+
+
+
+/* COMEÇO CSS FOOTER */
+.footer {
+    background-color: black;
+    width: 1349px;
+    height: 380px;
+    padding: 20px 75px;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: 820px 420px;
+    margin: 0px auto;
+    margin-top: 180px;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.social-media {
+    height: 350px;
+    display: grid;
+    grid-template-columns: 400px;
+    padding-left: 50px;
+}
+
+.social-media p {
+    color: #ffffff;
+    padding: 12px 0;
+}
+
+.social-media span {
+    color: #ffffff;
+    position: relative;
+    left: 0px;
+    top: -19px;
+}
+
+.footer .img-face , .img-insta , .img-wpp{
+    width: 60px;
+    height: 50px;
+    padding: 5px 10px;
+}
+
+.footer .img-footer {
+    width: 280px;
+    height: 320px;
+} 
+
+.footer-manual-usuario {
+    height: 400px;
+    background-color: #000000;
+    position: relative;
+    top: 1330px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.footer-adm {
+    margin-top: 50px;
+}
+
+.footer-index {
+    position: relative;
+    bottom: 181px;
+}
+
+.social-media a {
+    color: #FFF;
+    position: relative;
+    left: 65px;
+    bottom: 35px;
+}
+
+.social-media a:hover {
+    color: gray;
+    position: relative;
+    left: 65px;
+    bottom: 35px;
+}
+
+#div-imgs-footer {
+    display: grid;
+}
+/* FIM FOOTER */
+
+
+
+
+/* INICIO TRANSIÇÃO DAS FUNÇÕES PERFIL */
+.body-perfil .procedimentos {
+    display: grid;
+}
+.body-perfil #btn-proced {
+    background-color: gray;
+    cursor: default;
+}
+
+.body-agenda-int .perfil-agenda {
+    display: grid;
+}
+.body-agenda-int #btn-agenda {
+    background-color: gray;
+    cursor: default;
+}
+
+.body-procedimentos-int .procedimentos {
+    display: grid;
+}
+.body-procedimentos-int #btn-proced {
+    background-color: gray;
+    cursor: default;
+}
+
+.body-galeria-int .perfil-galeria {
+    display: grid;
+}
+.body-galeria-int #btn-galeria {
+    background-color: gray;
+    cursor: default;
+}
+
+.body-combo-int .perfil-combo {
+    display: grid;
+}
+.body-combo-int #btn-desconto {
+    background-color: gray;
+    cursor: default;
+}
+/* FIM TRANSIÇÃO DAS FUNÇÕES PERFIL */
+
+
+/* INICIO TRANSIÇÃO DAS FUNÇÕES SERVIÇOS */
+.body-servicos #cabelo {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #838DD9;
+    color: #FFF;
+    cursor: default;
+}
+
+.body-capilar-int .capilar {
+    display: inherit;
+}
+.body-capilar-int #cabelo {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #838DD9;
+    color: #FFF;
+    cursor: default;
+} /*capilar*/
+
+
+.body-manicure_pedicure-int .manicure_pedicure {
+    display: inherit;
+}
+.body-manicure_pedicure-int #manicure_pedicure {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #838DD9;
+    color: #FFF;
+    cursor: default;
+}
+.body-manicure_pedicure-int .capilar {
+    display: none;
+} /*manicure_pedicure*/
+
+
+.body-design_sobrancelha-int .design_sobrancelha {
+    display: inherit;
+}
+.body-design_sobrancelha-int #sobrancelha {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #838DD9;
+    color: #FFF;
+    cursor: default;
+}
+.body-design_sobrancelha-int .capilar {
+    display: none;
+} /*design_sobrancelha*/
+
+
+.body-promocoes_servicos-int .promocoes_servicos {
+    display: inherit;
+}
+.body-promocoes_servicos-int #promocoes-servicos {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #838DD9;
+    color: #FFF;
+    cursor: default;
+}
+.body-promocoes_servicos-int .capilar {
+    display: none;
+} /*promocoes_servicos*/
+/* FIM TRANSIÇÃO DAS FUNÇÕES SERVIÇOS */
+
+
+
+/* INICIO TRANSIÇÃO DAS FUNÇÕES PERFIL ADM */
+.body-perfil-adm .procedimentos {
+    display: grid;
+}
+.body-perfil-adm #btn-proced {
+    background-color: gray;
+    cursor: default;
+}
+
+
+.body-config-int-adm .sessao-gerenciar {
+    display: grid;
+}
+.body-config-int-adm #btn-config {
+    background-color: gray;
+    cursor: default;
+}
+
+.body-agenda-int-adm .perfil-agenda {
+    display: grid;
+}
+.body-agenda-int-adm #btn-agenda {
+    background-color: gray;
+    cursor: default;
+}
+
+.body-galeria-int-adm .perfil-galeria {
+    display: grid;
+}
+.body-galeria-int-adm #btn-galeria {
+    background-color: gray;
+    cursor: default;
+}
+
+.body-procedimentos-int-adm .procedimentos {
+    display: grid;
+}
+.body-procedimentos-int-adm #btn-proced {
+    background-color: gray;
+    cursor: default;
+}
+/* FIM TRANSIÇÃO DAS FUNÇÕES PERFIL ADM */
+
+
+/* INICIO TRANSIÇÃO DAS FUNÇÕES PERFIL EMPREGADO */
+.body-perfil-emp .procedimentos {
+    display: grid;
+}
+.body-perfil-emp #btn-proced {
+    background-color: gray;
+    cursor: default;
+}
+
+.body-procedimentos-int-emp .procedimentos {
+    display: grid;
+}
+.body-procedimentos-int-emp #btn-proced {
+    background-color: gray;
+    cursor: default;
+}
+
+.body-agenda-int-emp .perfil-agenda {
+    display: grid;
+}
+.body-agenda-int-emp #btn-agenda {
+    background-color: gray;
+    cursor: default;
+}
+/* FIM TRANSIÇÃO DAS FUNÇÕES PERFIL EMPREGADO */
+
+
+
